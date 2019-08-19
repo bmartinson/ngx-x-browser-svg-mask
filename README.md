@@ -34,7 +34,6 @@ This package provides a directive for Angular 2+ that helps handle some of the c
 
 	```html
   <svg version="1.2">
-    <!-- Creates the Actual Mask -->
     <mask id="elm-tree-mask">
       <image [attr.xlink:href]="'./assets/elm-tree.svg'"
               preserveAspectRatio="xMidYMid slice"
@@ -42,8 +41,6 @@ This package provides a directive for Angular 2+ that helps handle some of the c
               [attr.height]="'100%'">
       </image>
     </mask>
-
-    <!-- Draw the Image With the Mask -->
     <image width="500"
             height="338"
             [ngxSVGMask]="'#elm-tree-mask'"
