@@ -1,0 +1,26 @@
+<div class="ngx-svg-mask-col">
+  <h1>Welcome to ngx-x-browser-svg-mask!</h1>
+
+  <h2>Standard Example</h2>
+  <h3>A bitmap image masked by an svg.</h3>
+  <div class="ngx-svg-mask-row">
+    <svg class="ngx-svg-mask-image"
+         version="1.2">
+      <!-- Creates the Actual Mask -->
+      <mask id="elm-tree-mask">
+        <image [attr.xlink:href]="'./assets/elm-tree.svg'"
+               preserveAspectRatio="xMidYMid slice"
+               [attr.width]="'100%'"
+               [attr.height]="'100%'">
+        </image>
+      </mask>
+
+      <!-- Draw the Image With the Mask -->
+      <image width="500"
+             height="338"
+             [ngxSVGMask]="'#elm-tree-mask'"
+             [attr.xlink:href]="'./assets/salmon-catch.jpg'">
+      </image>
+    </svg>
+  </div>
+</div>
