@@ -32,23 +32,23 @@ This package provides a directive for Angular 2+ that helps handle some of the c
 
 2. Use the `ngxSVGMask` directive on image elements to provide a reference to your SVG mask in a cross browser friendly way.
 
-  ```
-   <svg version="1.2">
-      <mask id="elm-tree-mask">
-        <image [attr.xlink:href]="'./assets/elm-tree.svg'"
-                preserveAspectRatio="xMidYMid slice"
-                [attr.width]="'100%'"
-                [attr.height]="'100%'">
-        </image>
-      </mask>
+    ```
+     <svg version="1.2">
+        <mask id="elm-tree-mask">
+          <image [attr.xlink:href]="'./assets/elm-tree.svg'"
+                  preserveAspectRatio="xMidYMid slice"
+                  [attr.width]="'100%'"
+                  [attr.height]="'100%'">
+          </image>
+        </mask>
 
-      <image width="500"
-              height="338"
-              [ngxSVGMask]="'#elm-tree-mask'"
-              [attr.xlink:href]="'./assets/salmon-catch.jpg'">
-      </image>
-    </svg>
-  ```
+        <image width="500"
+                height="338"
+                [ngxSVGMask]="'#elm-tree-mask'"
+                [attr.xlink:href]="'./assets/salmon-catch.jpg'">
+        </image>
+      </svg>
+    ```
 
 ## API
 
