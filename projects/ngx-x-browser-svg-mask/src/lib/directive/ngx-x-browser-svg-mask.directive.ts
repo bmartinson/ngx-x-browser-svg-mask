@@ -49,7 +49,7 @@ export class NgxXBrowserSVGMaskDirective {
    * @return The mask with full url route designated.
    */
   private get maskImage(): string {
-    return "url(" + window.location.pathname.slice(1) + this.mask + ")";
+    return "url(" + window.location.pathname.slice(1) + window.location.search + this.mask + ")";
   }
 
   constructor(private el: ElementRef) {
