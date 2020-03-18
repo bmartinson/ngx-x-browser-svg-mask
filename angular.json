@@ -136,6 +136,11 @@
           "options": {
             "tsConfig": "projects/ngx-x-browser-svg-mask/tsconfig.lib.json",
             "project": "projects/ngx-x-browser-svg-mask/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-x-browser-svg-mask/tsconfig.lib.prod.json"
+            }
           }
         },
         "test": {
