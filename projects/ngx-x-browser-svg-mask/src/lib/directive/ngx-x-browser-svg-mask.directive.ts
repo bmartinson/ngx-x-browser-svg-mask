@@ -1,18 +1,18 @@
-import { Directive, ElementRef, HostBinding, Input } from "@angular/core";
+import { Directive, ElementRef, HostBinding, Input } from '@angular/core';
 
 @Directive({
-  selector: "[ngxSVGMask]",
+  selector: '[ngxSVGMask]',
 })
 export class NgxXBrowserSVGMaskDirective {
 
-  @Input("ngxSVGMask") private readonly mask: string;
+  @Input('ngxSVGMask') private readonly mask: string;
 
   /**
    * Host binding to apply the svg image element node type attribute.
    */
-  @HostBinding("attr.mask")
+  @HostBinding('attr.mask')
   private get svgMaskImage(): string | undefined {
-    if (this.el.nativeElement.nodeName.toLowerCase() === "image") {
+    if (this.el.nativeElement.nodeName.toLowerCase() === 'image') {
       return this.maskImage;
     } else {
       return undefined;
@@ -22,9 +22,9 @@ export class NgxXBrowserSVGMaskDirective {
   /**
    * Host binding to apply the standard css style to non-image type element nodes.
    */
-  @HostBinding("style.mask-image")
+  @HostBinding('style.mask-image')
   private get cssMaskImage(): string | undefined {
-    if (this.el.nativeElement.nodeName.toLowerCase() !== "image") {
+    if (this.el.nativeElement.nodeName.toLowerCase() !== 'image') {
       return this.maskImage;
     } else {
       return undefined;
@@ -34,9 +34,9 @@ export class NgxXBrowserSVGMaskDirective {
   /**
    * Host binding to apply the webkit style to non-image type element nodes.
    */
-  @HostBinding("style.-webkit-mask-image")
+  @HostBinding('style.-webkit-mask-image')
   private get cssWebkitMaskImage(): string | undefined {
-    if (this.el.nativeElement.nodeName.toLowerCase() !== "image") {
+    if (this.el.nativeElement.nodeName.toLowerCase() !== 'image') {
       return this.maskImage;
     } else {
       return undefined;
@@ -49,11 +49,11 @@ export class NgxXBrowserSVGMaskDirective {
    * @return The mask with full url route designated.
    */
   private get maskImage(): string {
-    return "url(" + window.location.pathname.slice(1) + window.location.search + this.mask + ")";
+    return 'url(' + window.location.pathname.slice(1) + window.location.search + this.mask + ')';
   }
 
   constructor(private el: ElementRef) {
-    this.mask = "";
+    this.mask = '';
   }
 
 }

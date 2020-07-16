@@ -1,5 +1,5 @@
-import { NgModule } from "@angular/core";
-import { NgxXBrowserSVGMaskDirective } from "./directive/ngx-x-browser-svg-mask.directive";
+import { NgModule } from '@angular/core';
+import { NgxXBrowserSVGMaskDirective } from './directive/ngx-x-browser-svg-mask.directive';
 
 @NgModule({
   declarations: [
