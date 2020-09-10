@@ -165,5 +165,8 @@
       }
     }
   },
-  "defaultProject": "ngx-x-browser-svg-mask"
+  "defaultProject": "ngx-x-browser-svg-mask",
+  "cli": {
+    "analytics": "dda52619-10e4-4b54-8086-1adf7c907286"
+  }
 }
