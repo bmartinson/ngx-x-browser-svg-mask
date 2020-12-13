@@ -23,8 +23,8 @@
   },
   "homepage": "https://github.com/bmartinson/ngx-x-browser-svg-mask#readme",
   "peerDependencies": {
-    "@angular/common": "^10.0.0",
-    "@angular/core": "^10.0.0"
+    "@angular/common": "^10.0.0 || ^11.0.0",
+    "@angular/core": "^10.0.0 || ^11.0.0"
   },
   "dependencies": {
     "tslib": "^2.0.0"
