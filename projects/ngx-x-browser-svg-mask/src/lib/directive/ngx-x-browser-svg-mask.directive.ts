@@ -5,7 +5,7 @@ import { Directive, ElementRef, HostBinding, Input } from '@angular/core';
 })
 export class NgxXBrowserSVGMaskDirective {
 
-  @Input('ngxSVGMask') private readonly mask: string;
+  @Input('ngxSVGMask') public readonly mask: string;
 
   /**
    * Host binding to apply the svg image element node type attribute.
