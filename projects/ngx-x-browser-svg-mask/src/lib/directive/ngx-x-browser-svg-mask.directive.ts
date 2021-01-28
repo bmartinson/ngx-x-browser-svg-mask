@@ -52,7 +52,7 @@ export class NgxXBrowserSVGMaskDirective {
     return 'url(' + window.location.pathname.slice(1) + window.location.search + this.mask + ')';
   }
 
-  constructor(private el: ElementRef) {
+  public constructor(private el: ElementRef) {
     this.mask = '';
   }
 

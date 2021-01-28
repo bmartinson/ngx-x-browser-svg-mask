@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'ngx-svgmask-app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ngx-x-browser-svg-mask-library';
+
+  public title = 'ngx-x-browser-svg-mask-library';
+
 }
