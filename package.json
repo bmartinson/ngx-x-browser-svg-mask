@@ -5,11 +5,32 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-publish": "ng build --prod && cd dist/ngx-x-browser-svg-mask/ && npm publish && cd ../.. && rm -rf ./dist",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "private": false,
+  "license": "MIT",
+  "author": "Brian Martinson <brian@brianmartinson.com> (https://brianmartinson.com/)",
+  "keywords": [
+    "angular",
+    "svg",
+    "mask",
+    "cross-browser",
+    "ng",
+    "ng2",
+    "ngx"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:bmartinson/ngx-x-browser-svg-mask.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bmartinson/ngx-x-browser-svg-mask/issues",
+    "email": "brian@brianmartinson.com"
+  },
+  "homepage": "https://github.com/bmartinson/ngx-x-browser-svg-mask#readme",
   "dependencies": {
     "@angular/animations": "~11.1.0",
     "@angular/common": "~11.1.0",
