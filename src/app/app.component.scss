@@ -1,1 +1,20 @@
+.ngx-svg-mask-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+.ngx-svg-mask-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .ngx-svg-mask-image {
+    width: 500px;
+    height: 338px;
+  }
+}
