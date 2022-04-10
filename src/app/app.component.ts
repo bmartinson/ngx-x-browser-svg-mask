@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  public title = 'ngx-x-browser-svg-mask-library';
+  public title = 'ngx-x-browser-svg-mask-sample';
 
 }

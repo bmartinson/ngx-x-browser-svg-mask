@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-x-browser-svg-mask-library": {
+    "ngx-x-browser-svg-mask-sample": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngx-x-browser-svg-mask-library",
+            "outputPath": "dist/ngx-x-browser-svg-mask-sample",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,18 +71,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-x-browser-svg-mask-library:build"
+            "browserTarget": "ngx-x-browser-svg-mask-sample:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngx-x-browser-svg-mask-library:build:production"
+              "browserTarget": "ngx-x-browser-svg-mask-sample:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-x-browser-svg-mask-library:build"
+            "browserTarget": "ngx-x-browser-svg-mask-sample:build"
           }
         },
         "test": {
@@ -115,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ngx-x-browser-svg-mask-library:serve"
+            "devServerTarget": "ngx-x-browser-svg-mask-sample:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ngx-x-browser-svg-mask-library:serve:production"
+              "devServerTarget": "ngx-x-browser-svg-mask-sample:serve:production"
             }
           }
         }
