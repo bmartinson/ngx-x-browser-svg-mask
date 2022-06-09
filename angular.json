@@ -162,6 +162,5 @@
         }
       }
     }
-  },
-  "defaultProject": "ngx-x-browser-svg-mask"
+  }
 }
