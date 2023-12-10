@@ -71,18 +71,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-x-browser-svg-mask-sample:build"
+            "buildTarget": "ngx-x-browser-svg-mask-sample:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngx-x-browser-svg-mask-sample:build:production"
+              "buildTarget": "ngx-x-browser-svg-mask-sample:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-x-browser-svg-mask-sample:build"
+            "buildTarget": "ngx-x-browser-svg-mask-sample:build"
           }
         },
         "test": {
