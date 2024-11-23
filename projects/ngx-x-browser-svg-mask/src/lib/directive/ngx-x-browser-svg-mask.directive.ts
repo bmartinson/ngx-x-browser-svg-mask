@@ -1,7 +1,8 @@
 import { Directive, ElementRef, HostBinding, Input } from '@angular/core';
 
 @Directive({
-  selector: '[ngxSVGMask]',
+    selector: '[ngxSVGMask]',
+    standalone: false
 })
 export class NgxXBrowserSVGMaskDirective {
 
