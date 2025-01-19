@@ -10,8 +10,9 @@
     "build-publish-npmjs": "sed -i '' 's/\"name\": \"ngx-x-browser-svg-mask\"/\"name\": \"ngx-x-browser-svg-mask\"/' projects/ngx-x-browser-svg-mask/package.json && npm run _build-publish; git checkout -- ./projects/ngx-x-browser-svg-mask/package.json",
     "build-publish-github": "sed -i '' 's/\"name\": \"ngx-x-browser-svg-mask\"/\"name\": \"@bmartinson/ngx-x-browser-svg-mask\"/' projects/ngx-x-browser-svg-mask/package.json && npm run _build-publish; git checkout --  ./projects/ngx-x-browser-svg-mask/package.json",
     "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "format": "npx prettier --write . $@",
+    "lint": "ng lint --fix ngx-x-browser-svg-mask-sample; ng lint --fix ngx-x-browser-svg-mask"
   },
   "private": false,
   "license": "MIT",
@@ -51,11 +52,13 @@
     "@angular-devkit/build-angular": "^19.1.2",
     "@angular/cli": "^19.1.2",
     "@angular/compiler-cli": "^19.1.1",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.1",
     "@types/node": "^22.10.7",
     "angular-eslint": "19.0.2",
     "eslint": "^9.17.0",
     "eslint-plugin-import": "2.31.0",
     "ng-packagr": "^19.1.0",
+    "prettier": "^3.4.2",
     "ts-node": "~10.9.2",
     "typescript": "^5.6.0",
     "typescript-eslint": "8.20.0"
