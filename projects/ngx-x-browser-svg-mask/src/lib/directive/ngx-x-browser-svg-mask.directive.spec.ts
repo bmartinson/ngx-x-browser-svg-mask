@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+
 import { NgxXBrowserSVGMaskDirective } from './ngx-x-browser-svg-mask.directive';
 
 describe('NgxXBrowserSVGMaskDirective', () => {
