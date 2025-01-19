@@ -8,7 +8,7 @@
     "build-publish": "npm run build-publish-npmjs && npm run build-publish-github",
     "_build-publish": "ng build ngx-x-browser-svg-mask --configuration=production && cd dist/ngx-x-browser-svg-mask/ && npm publish && cd ../.. && rm -rf ./dist",
     "build-publish-npmjs": "sed -i '' 's/\"name\": \"ngx-x-browser-svg-mask\"/\"name\": \"ngx-x-browser-svg-mask\"/' projects/ngx-x-browser-svg-mask/package.json && npm run _build-publish; git checkout -- ./projects/ngx-x-browser-svg-mask/package.json",
-    "build-publish-github": "sed -i '' 's/\"name\": \"ngx-x-browser-svg-mask\"/\\\"name\\\": \"@bmartinson/ngx-x-browser-svg-mask\"/' projects/ngx-x-browser-svg-mask/package.json && npm run _build-publish; git checkout --  ./projects/ngx-x-browser-svg-mask/package.json",
+    "build-publish-github": "sed -i '' 's/\"name\": \"[^\"]*\"/\"name\": \"@bmartinson\\/ngx-x-browser-svg-mask\"/' projects/ngx-x-browser-svg-mask/package.json && npm run _build-publish; git checkout -- ./projects/ngx-x-browser-svg-mask/package.json",
     "test": "ng test",
     "e2e": "ng e2e",
     "format": "npx prettier --write . $@",
