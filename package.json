@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "prep-release": "./scripts/bump-package-version.sh $(jq -r .name package.json)",
+    "prep-release": "./scripts/bump-package-version.sh ngx-x-browser-svg-mask",
     "build": "ng build ngx-x-browser-svg-mask",
     "build-publish": "npm run build-publish-npmjs && npm run build-publish-github && npm run _tag-release",
     "_build-publish": "ng build ngx-x-browser-svg-mask --configuration=production && cd dist/ngx-x-browser-svg-mask/ && npm publish && cd ../.. && rm -rf ./dist",
