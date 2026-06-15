@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 @Component({
   selector: 'ngx-svgmask-app-root',
   templateUrl: './app.component.html',
-  changeDetection: ChangeDetectionStrategy.Eager,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
