@@ -1,6 +1,6 @@
 {
   "name": "ngx-x-browser-svg-mask",
-  "version": "22.0.18",
+  "version": "22.0.19",
   "exports": {
     ".": "./src/public-api.ts"
   },
