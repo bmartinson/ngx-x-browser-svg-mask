@@ -90,18 +90,21 @@
     "ngx-x-browser-svg-mask": {
       "projectType": "library",
       "root": "projects/ngx-x-browser-svg-mask",
-      "sourceRoot": "projects/ngx-x-browser-svg-mask/src",
+      "sourceRoot": "projects/ngx-x-browser-svg-mask",
       "prefix": "ngxSVGMask",
       "architect": {
         "build": {
-          "builder": "@angular/build:ng-packagr",
+          "builder": "@angular/build:library",
           "options": {
             "tsConfig": "projects/ngx-x-browser-svg-mask/tsconfig.lib.json",
-            "project": "projects/ngx-x-browser-svg-mask/ng-package.json"
+            "outputPath": "dist/ngx-x-browser-svg-mask"
           },
           "configurations": {
             "production": {
               "tsConfig": "projects/ngx-x-browser-svg-mask/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "compilationMode": "full"
             }
           }
         },
